@@ -658,7 +658,17 @@ h1, h2, h3 { color: var(--beige-soft); }
 
 /* CTA y footer */
 .cta { background: linear-gradient(120deg, #0B2545 0%, var(--blue-600) 55%, var(--blue) 100%); }
-.footer { background: #040507; border-top: 1px solid var(--border); }
+.footer {
+  background: linear-gradient(180deg, #0B3A66 0%, #082B4D 100%);
+  color: rgba(234, 223, 203, .78);
+  border-top: 3px solid var(--sand);
+}
+.footer .social { background: rgba(255, 255, 255, .1); }
+.footer .social:hover { background: var(--sand); color: #0B2545; }
+.footer__links a:hover { color: var(--sand); }
+.footer__bottom { border-top-color: rgba(234, 223, 203, .15); }
+.to-top { background: rgba(255, 255, 255, .1); }
+.to-top:hover { background: var(--sand); color: #0B2545; }
 
 /* Modal */
 .modal__backdrop { background: rgba(0, 0, 0, .7); }
