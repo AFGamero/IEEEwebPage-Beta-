@@ -492,3 +492,104 @@ h1, h2, h3 { font-family: var(--font-title); font-weight: 700; line-height: 1.15
   .draw { stroke-dashoffset: 0; }
   .text-accent::after { transform: none; }
 }
+
+/* =========================================================
+   TEMA OSCURO (rama `identidad-dark`)
+   Solo paleta oficial: azul oscuro como base (y sus sombras/tintes),
+   beige y blanco cálido para texto, arena y petróleo como acentos.
+   ========================================================= */
+:root {
+  --bg: #081629;            /* azul oscuro, un paso más profundo */
+  --bg-alt: #0B1D3A;        /* azul oscuro oficial */
+  --surface: #102648;       /* tinte de azul oscuro para tarjetas */
+  --surface-2: #153058;
+  --blue-light: #3F86BF;    /* tinte de #005A9C para líneas sobre fondo oscuro */
+  --petrol-light: #4E9A9E;  /* tinte de #2D6F73 */
+
+  --ink: var(--warm);
+  --muted: rgba(234, 219, 198, .72);
+  --line: rgba(234, 219, 198, .12);
+  --line-strong: rgba(234, 219, 198, .24);
+  --shadow: 0 16px 36px -18px rgba(0, 0, 0, .6);
+  color-scheme: dark;
+}
+
+body { background: var(--bg); }
+h1, h2, h3 { color: var(--warm); }
+.eyebrow { color: var(--petrol-light); }
+.text-accent { color: var(--sand); }
+.text-accent::after { background: var(--beige); opacity: .5; }
+
+/* Header */
+.header.is-scrolled { background: rgba(8, 22, 41, .9); }
+.logo__text { color: var(--warm); border-color: var(--line-strong); }
+.logo__text small { color: var(--sand); }
+.nav__link { color: var(--muted); }
+.nav__link:hover, .nav__link.is-active { color: var(--warm); }
+.burger span { background: var(--warm); }
+
+/* Botones */
+.btn--primary:hover { background: var(--sand); color: var(--navy); }
+.btn--ghost { color: var(--warm); }
+.btn--ghost:hover { border-color: var(--sand); color: var(--sand); }
+
+/* Hero e ilustración */
+.hero__visual { background: var(--bg-alt); border-color: var(--line); }
+.ill-mtn { stroke: var(--warm); }
+.ill-snow { stroke: var(--beige); }
+.ill-hill, .ill-palm path { stroke: var(--petrol-light); }
+.ill-birds path { stroke: var(--beige); }
+.ill-net path { stroke: var(--blue-light); }
+.ill-net circle { fill: var(--bg-alt); stroke: var(--blue-light); }
+.ill-sun__disc { fill: rgba(196, 154, 90, .18); }
+.wave { stroke: var(--blue-light); }
+
+/* Valores y secciones */
+.values { background: var(--bg-alt); }
+.value { color: var(--warm); }
+.value svg { stroke: var(--petrol-light); }
+.section--beige { background: var(--bg-alt); }
+
+/* Fotografías (marcadores) */
+.ph { background: var(--surface); }
+.ph::before { filter: invert(1) sepia(.4); opacity: .4; }
+.ph::after { color: rgba(234, 219, 198, .5); }
+.about__media .ph--small { background: var(--surface-2); border-color: var(--bg); }
+.stat__num { color: var(--sand); }
+
+/* Chips y tarjetas */
+.chip { color: var(--warm); }
+.chip:hover { border-color: var(--sand); color: var(--sand); }
+.chip.is-active { background: var(--beige); color: var(--navy); border-color: var(--beige); }
+.news, .society { background: var(--surface); }
+.society--soon { background: transparent; }
+.tag { background: var(--bg); color: var(--sand); }
+.news__more, .society__link { color: var(--beige); }
+.pillar:hover { background: var(--surface); }
+.pillar__icon { color: var(--petrol-light); }
+.pillar:hover .pillar__icon { color: var(--sand); }
+.member__avatar { background: var(--surface); color: var(--beige); }
+.member__avatar::after { background: var(--sand); }
+.social { color: var(--beige); }
+.social:hover { background: var(--sand); border-color: var(--sand); color: var(--navy); }
+.society__logo { box-shadow: 0 0 0 1px var(--line); }
+.society__soon { background: rgba(196, 154, 90, .18); color: var(--sand); }
+
+/* CTA en verde petróleo para contrastar con el fondo azul */
+.cta { background: var(--petrol); }
+.cta__land { color: var(--beige); opacity: .35; }
+.cta::after { border-color: var(--beige); }
+.eyebrow--light { color: var(--beige); }
+
+/* Footer más profundo */
+.footer { background: #06101F; }
+.footer__land { color: var(--petrol-light); opacity: .6; }
+
+/* Modal */
+.modal__dialog, .modal__close { background: var(--bg-alt); color: var(--warm); }
+.modal__body .tag { background: var(--surface); }
+.modal__backdrop { background: rgba(3, 8, 16, .7); }
+
+@media (max-width: 900px) {
+  .nav { background: var(--bg-alt); }
+}
