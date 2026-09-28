@@ -1,5 +1,5 @@
 /* =========================================================
-   IEEE Unimagdalena — Landing
+   IEEE Unimagdalena Student Branch — Landing
    Contenido editable en los arrays de abajo.
    Para usar una imagen real, agrega la propiedad `img: "assets/img/archivo.jpg"`.
    ========================================================= */
@@ -71,13 +71,13 @@ const TEAM = [
 ];
 
 const SOCIETIES = [
-  { acr: "RAS", name: "Robotics & Automation Society", color: "#00629B", text: "Robótica industrial, drones y sistemas autónomos." },
-  { acr: "CS", name: "Computer Society", color: "#0B2545", text: "Inteligencia artificial, ciberseguridad y desarrollo de software." },
-  { acr: "WIE", name: "Women in Engineering", color: "#7A4E8C", text: "Liderazgo, mentoría y equidad de género en STEM." },
-  { acr: "PES", name: "Power & Energy Society", color: "#2F7D5B", text: "Energía sostenible, redes inteligentes y transición energética." },
-  { acr: "OES", name: "Oceanic Engineering Society", color: "#1C7C9C", text: "Exploración marina, acústica submarina y sistemas costeros." },
-  { acr: "GRSS", name: "Geoscience & Remote Sensing", color: "#A07A3C", text: "Monitoreo satelital y seguimiento ambiental.", soon: true },
-  { acr: "AESS", name: "Aerospace & Electronic Systems", color: "#5B6778", text: "Reactivación del capítulo aeroespacial.", soon: true },
+  { acr: "RAS", name: "Robotics & Automation Society", color: "#005A9C", text: "Robótica industrial, drones y sistemas autónomos." },
+  { acr: "CS", name: "Computer Society", color: "#0B1D3A", text: "Inteligencia artificial, ciberseguridad y desarrollo de software." },
+  { acr: "WIE", name: "Women in Engineering", color: "#C49A5A", text: "Liderazgo, mentoría y equidad de género en STEM." },
+  { acr: "PES", name: "Power & Energy Society", color: "#2D6F73", text: "Energía sostenible, redes inteligentes y transición energética." },
+  { acr: "OES", name: "Oceanic Engineering Society", color: "#005A9C", text: "Exploración marina, acústica submarina y sistemas costeros." },
+  { acr: "GRSS", name: "Geoscience & Remote Sensing", color: "#2D6F73", text: "Monitoreo satelital y seguimiento ambiental.", soon: true },
+  { acr: "AESS", name: "Aerospace & Electronic Systems", color: "#0B1D3A", text: "Reactivación del capítulo aeroespacial.", soon: true },
 ];
 
 const SOCIAL_ICONS = {
@@ -103,7 +103,7 @@ function renderNews() {
     <article class="news reveal ${n.featured ? "news--featured" : ""}" data-type="${n.type}" data-index="${i}" data-delay="${(i % 3) * 100}">
       <div class="news__media">
         <span class="tag">${n.type}</span>
-        ${media(n, "Imagen")}
+        ${media(n, "Fotografía del evento")}
       </div>
       <div class="news__body">
         <time class="news__date" datetime="${n.date}">${formatDate(n.date)}</time>
