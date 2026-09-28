@@ -659,9 +659,27 @@ h1, h2, h3 { color: var(--beige-soft); }
 /* CTA y footer */
 .cta { background: linear-gradient(120deg, #0B2545 0%, var(--blue-600) 55%, var(--blue) 100%); }
 .footer {
-  background: linear-gradient(180deg, #0B3A66 0%, #082B4D 100%);
-  color: rgba(234, 223, 203, .78);
-  border-top: 3px solid var(--sand);
+  position: relative; overflow: hidden; isolation: isolate;
+  background:
+    radial-gradient(ellipse 60% 80% at 0% 0%, rgba(30, 136, 208, .28) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 70% at 100% 100%, rgba(212, 180, 122, .16) 0%, transparent 60%),
+    linear-gradient(135deg, #0A2440 0%, #061A30 45%, #04101F 75%, #030A14 100%);
+  color: rgba(234, 223, 203, .75);
+  border-top: 0;
+}
+/* Línea superior degradada azul → dorado → azul */
+.footer::before {
+  content: ""; position: absolute; inset: 0 0 auto; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--blue) 25%, var(--sand) 50%, var(--blue) 75%, transparent);
+  background-size: 200% 100%;
+  animation: footerLine 8s linear infinite;
+}
+@keyframes footerLine { to { background-position: -200% 0; } }
+/* Brillo difuso que se mueve lentamente */
+.footer::after {
+  content: ""; position: absolute; z-index: -1; width: 480px; height: 480px; border-radius: 50%;
+  right: 10%; top: -240px; background: rgba(30, 136, 208, .12); filter: blur(90px);
+  animation: drift 20s ease-in-out infinite alternate;
 }
 .footer .social { background: rgba(255, 255, 255, .1); }
 .footer .social:hover { background: var(--sand); color: #0B2545; }
