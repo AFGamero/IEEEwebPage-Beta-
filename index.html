@@ -76,42 +76,69 @@
           </ul>
         </div>
 
-        <!-- Ilustración lineal: Sierra Nevada, sol, mar, aves y red tecnológica -->
+        <!-- Ilustración lineal: El Morro con su faro frente a la bahía, Sierra Nevada al fondo, sol, mar, aves y red tecnológica -->
         <figure class="hero__visual reveal" data-delay="200" aria-hidden="true">
           <svg class="ill" viewBox="0 0 560 420" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <!-- Sol -->
+            <!-- Sol de atardecer tras El Morro -->
             <g class="ill-sun">
-              <circle class="ill-sun__halo" cx="390" cy="140" r="74"/>
-              <circle class="ill-sun__disc" cx="390" cy="140" r="50"/>
+              <circle class="ill-sun__halo" cx="440" cy="190" r="62"/>
+              <circle class="ill-sun__disc" cx="440" cy="190" r="42"/>
             </g>
 
             <!-- Red: la tecnología conecta personas -->
             <g class="ill-net">
-              <path d="M50 122 L112 72 L184 98 L124 146 Z M112 72 L124 146" pathLength="1" class="draw draw--net"/>
-              <circle cx="50" cy="122" r="5"/><circle cx="112" cy="72" r="5"/>
-              <circle cx="184" cy="98" r="5"/><circle cx="124" cy="146" r="5"/>
+              <path d="M150 112 L200 80 L246 112 L196 142 Z M200 80 L196 142" pathLength="1" class="draw draw--net"/>
+              <circle cx="150" cy="112" r="5"/><circle cx="200" cy="80" r="5"/>
+              <circle cx="246" cy="112" r="5"/><circle cx="196" cy="142" r="5"/>
             </g>
 
             <!-- Aves -->
             <g class="ill-birds">
-              <path d="M290 92 q7 -7 14 0 q7 -7 14 0"/>
-              <path d="M322 68 q5 -5 10 0 q5 -5 10 0"/>
-              <path d="M470 96 q6 -6 12 0 q6 -6 12 0"/>
+              <path d="M80 176 q7 -7 14 0 q7 -7 14 0"/>
+              <path d="M112 154 q5 -5 10 0 q5 -5 10 0"/>
+              <path d="M330 126 q6 -6 12 0 q6 -6 12 0"/>
             </g>
 
-            <!-- Sierra Nevada -->
-            <path class="ill-mtn draw" pathLength="1" d="M10 300 L110 196 L150 232 L250 110 L318 186 L352 160 L450 262 L550 300"/>
-            <path class="ill-snow draw draw--late" pathLength="1" d="M224 142 L238 152 L250 140 L264 154 L284 148"/>
-            <path class="ill-snow draw draw--late" pathLength="1" d="M86 222 L98 230 L110 220 L124 232 L139 222"/>
+            <!-- Sierra Nevada, lejana en el horizonte -->
+            <path class="ill-sierra draw" pathLength="1" d="M0 318 L36 300 L64 308 L104 286 L136 298 L180 280 L240 296 L300 284 L360 296 L420 280 L480 292 L520 278 L560 296"/>
 
-            <!-- Colinas y palma -->
-            <path class="ill-hill draw draw--mid" pathLength="1" d="M0 322 C80 280 150 290 220 312 C290 334 360 270 440 286 C500 298 530 310 560 316"/>
+            <!-- Costa y palma -->
+            <path class="ill-hill draw draw--mid" pathLength="1" d="M0 330 C30 318 64 320 96 342"/>
             <g class="ill-palm">
-              <path class="draw draw--late" pathLength="1" d="M470 290 C467 270 472 250 482 232"/>
-              <path class="draw draw--late" pathLength="1" d="M482 232 C470 222 456 224 446 234"/>
-              <path class="draw draw--late" pathLength="1" d="M482 232 C494 220 508 222 518 232"/>
-              <path class="draw draw--late" pathLength="1" d="M482 232 C478 218 470 210 458 206"/>
-              <path class="draw draw--late" pathLength="1" d="M482 232 C488 216 496 210 508 208"/>
+              <path class="draw draw--late" pathLength="1" d="M70 322 C67 300 72 278 82 260"/>
+              <path class="draw draw--late" pathLength="1" d="M82 260 C70 250 56 252 46 262"/>
+              <path class="draw draw--late" pathLength="1" d="M82 260 C94 248 108 250 118 260"/>
+              <path class="draw draw--late" pathLength="1" d="M82 260 C78 246 70 238 58 234"/>
+              <path class="draw draw--late" pathLength="1" d="M82 260 C88 244 96 238 108 236"/>
+            </g>
+
+            <!-- El Morro: isla rocosa, escalón a la izquierda, cima con el faro y cresta larga hacia el este -->
+            <path class="ill-morro-fill" d="M140 344 L146 334 L152 323 L160 313 L167 305 L178 297 L190 290 L203 284 L212 281 L218 280 L230 281 L251 283 L262 285 L268 284 L278 276 L287 269 L299 262 L310 259 L323 258 L338 259 L352 261 L371 263 L390 267 L400 266 L407 272 L420 276 L431 281 L448 286 L467 291 L485 299 L503 309 L512 315 L521 323 L532 334 L540 344 Z"/>
+            <path class="ill-mtn draw" pathLength="1" d="M140 344 L146 334 L152 323 L160 313 L167 305 L178 297 L190 290 L203 284 L212 281 L218 280 L230 281 L251 283 L262 285 L268 284 L278 276 L287 269 L299 262 L310 259 L323 258 L338 259 L352 261 L371 263 L390 267 L400 266 L407 272 L420 276 L431 281 L448 286 L467 291 L485 299 L503 309 L512 315 L521 323 L532 334 L540 344"/>
+            <!-- Grietas y estratos de la roca -->
+            <g class="ill-rock">
+              <path class="draw draw--late" pathLength="1" d="M176 318 L192 302"/>
+              <path class="draw draw--late" pathLength="1" d="M240 300 C250 296 262 298 272 294"/>
+              <path class="draw draw--late" pathLength="1" d="M300 304 L312 280"/>
+              <path class="draw draw--late" pathLength="1" d="M413 288 L408 320"/>
+              <path class="draw draw--late" pathLength="1" d="M455 306 L466 330"/>
+            </g>
+            <!-- Arbusto del escalón y rocas sueltas -->
+            <path class="ill-lh draw draw--late" pathLength="1" d="M214 279 q4 -9 9 -1"/>
+            <path class="ill-mtn draw draw--mid" pathLength="1" d="M122 344 C125 339 131 338 134 344 M546 344 C549 339 555 339 558 344"/>
+
+            <!-- Faro y casa del farero -->
+            <g class="ill-lh">
+              <path class="draw draw--late" pathLength="1" d="M312 258 V250 H334 V258"/>
+              <path class="draw draw--late" pathLength="1" d="M320 250 L321 226 M326 250 L325 226"/>
+              <path class="draw draw--late" pathLength="1" d="M317 226 H329"/>
+              <path class="draw draw--late" pathLength="1" d="M320 226 V219 H326 V226"/>
+              <path class="draw draw--late" pathLength="1" d="M319 219 L323 214 L327 219"/>
+            </g>
+            <circle class="ill-lh__light" cx="323" cy="222.5" r="2.5"/>
+            <g class="ill-beam">
+              <path class="ill-beam__l" d="M315 221 L274 212 M315 224 L274 233"/>
+              <path class="ill-beam__r" d="M331 221 L372 212 M331 224 L372 233"/>
             </g>
 
             <!-- Mar Caribe (ondas en movimiento) -->
@@ -122,7 +149,7 @@
               <path class="wave wave--3" d="M-80 398 q20 -8 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/>
             </g>
           </svg>
-          <figcaption class="hero__caption">Sierra Nevada de Santa Marta · 5.775 m s. n. m.</figcaption>
+          <figcaption class="hero__caption">El Morro · Bahía de Santa Marta</figcaption>
         </figure>
       </div>
     </section>

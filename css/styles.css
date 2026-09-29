@@ -159,6 +159,14 @@ h1, h2, h3 { font-family: var(--font-title); font-weight: 700; line-height: 1.15
 .ill-mtn { stroke: var(--navy); }
 .ill-snow { stroke: var(--blue); stroke-width: 1.6 !important; }
 .ill-hill { stroke: var(--petrol); }
+.ill-sierra { stroke: var(--blue); stroke-width: 1.4 !important; opacity: .45; }
+.ill-morro-fill { fill: var(--beige-soft); }
+.ill-rock path { stroke: var(--navy); stroke-width: 1.2 !important; opacity: .5; }
+.ill-lh, .ill-lh path { stroke: var(--navy); stroke-width: 1.6 !important; }
+.ill-lh__light { fill: var(--sand); stroke: none; transform-box: fill-box; transform-origin: center; animation: lh-glow 3s ease-in-out infinite; }
+.ill-beam path { stroke: var(--sand); stroke-width: 1.4 !important; opacity: .15; }
+.ill-beam__l { animation: lh-beam 3s ease-in-out infinite; }
+.ill-beam__r { animation: lh-beam 3s -1.5s ease-in-out infinite; }
 .ill-palm path { stroke: var(--petrol); stroke-width: 1.8 !important; }
 .ill-birds path { stroke: var(--navy); stroke-width: 1.6 !important; animation: birds 7s ease-in-out infinite; }
 .ill-birds path:nth-child(2) { animation-delay: -2s; }
@@ -187,6 +195,8 @@ h1, h2, h3 { font-family: var(--font-title); font-weight: 700; line-height: 1.15
 @keyframes birds { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(6px, -6px); } }
 @keyframes node { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.35); } }
 @keyframes spin { to { transform: rotate(360deg); } }
+@keyframes lh-glow { 0%, 100% { transform: scale(1); opacity: .7; } 50% { transform: scale(1.6); opacity: 1; } }
+@keyframes lh-beam { 0%, 100% { opacity: .1; } 50% { opacity: .9; } }
 
 .hero__caption {
   margin-top: 10px; text-align: center; font-size: .78rem; letter-spacing: .08em; color: var(--muted);
@@ -543,6 +553,9 @@ h1, h2, h3 { color: var(--warm); }
 .ill-net circle { fill: var(--bg-alt); stroke: var(--blue-light); }
 .ill-sun__disc { fill: rgba(196, 154, 90, .18); }
 .wave { stroke: var(--blue-light); }
+.ill-sierra { stroke: var(--blue-light); }
+.ill-morro-fill { fill: var(--bg-alt); }
+.ill-rock path, .ill-lh, .ill-lh path { stroke: var(--warm); }
 
 /* Valores y secciones */
 .values { background: var(--bg-alt); }
